@@ -1,0 +1,17 @@
+Redux
+
+#1 Crie seu objeto de estados na pasta reducers chamado reduce_<alguma coisa>;
+#2 Ainda na pasta, importe o reducer criado em index.js e set o estado no rootReducer;
+#3 Crie seu component/container em uma pasta chamada src/containers importando a propriedade connect do react-redux;
+#4 Declare a função mapStateToProps para jogar o estado atualizado pelo reducer, para dentro do container (virando uma props)
+#5 Invoque o connect no final, efetuando a ponte do react com redux;
+#6 Importe o container criado no componente e o chame no JSX <component />
+
+Actions
+
+# na pasta reducers, o index.js importa para um objeto os pequenos pedaços de estados feitos pelos reducers;
+# Na pasta actions, implemente um index.js retornando uma ação onde será retorado o tipo da ação e seu payload;
+# Cria-se a action, como uma reducer (reducer_action_alguma coisa) e ao ser disparada a action, todos os reducers o escutam;
+# Nessa função de um reducer_action, recebe-se os argumentos 'state' e 'action', fazendo um 'switch' do tipo da ação
+para disparar o payload correspondente;
+
